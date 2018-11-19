@@ -4,19 +4,19 @@ function butonart() {
 		buton++;
 	}
 	if (buton == 1) {
-		document.getElementById("resim").src = "e1.png" ;
+		document.getElementById("resim").style.background = "url('o1.jpg') center/cover no-repeat";
 	}
 	if (buton == 2) {
-		document.getElementById("resim").src = "e2.png";
+		document.getElementById("resim").style.background = "url('e2.png') center/cover no-repeat";
 	}
 	if (buton == 3) {
-		document.getElementById("resim").src = "e3.png";
+		document.getElementById("resim").style.background = "url('e3.png') center/cover no-repeat";
 	}
 	if (buton == 4) {
-		document.getElementById("resim").src = "e4.png";
+		document.getElementById("resim").style.background = "url('e4.png') center/cover no-repeat";
 	}
 	if (buton == 5) {
-		document.getElementById("resim").src = "e5.png";
+		document.getElementById("resim").style.background = "url('e5.png') center/cover no-repeat";
 	}
 	
 }
@@ -25,36 +25,36 @@ function butoneksi() {
 		buton--;
 	}
 	if (buton == 1) {
-		document.getElementById("resim").src = "e1.png";
+		document.getElementById("resim").style.background = "url('o1.jpg') center/cover no-repeat";
 	}
 	if (buton == 2) {
-		document.getElementById("resim").src = "e2.png";
+		document.getElementById("resim").style.background = "url('e2.png') center/cover no-repeat";
 	}
 	if (buton == 3) {
-		document.getElementById("resim").src = "e3.png";
+		document.getElementById("resim").style.background = "url('e3.png') center/cover no-repeat";
 	}
 	if (buton == 4) {
-		document.getElementById("resim").src = "e4.png";
+		document.getElementById("resim").style.background = "url('e4.png') center/cover no-repeat";
 	}
 	if (buton == 5) {
-		document.getElementById("resim").src = "e5.png";
+		document.getElementById("resim").style.background = "url('e5.png') center/cover no-repeat";
 	}
 	
 }
 function bir() {
-	document.getElementById("resim").src = "e1.png";
+	document.getElementById("resim").style.background = "url('o1.jpg') center/cover no-repeat";
 }
 function iki() {
-	document.getElementById("resim").src = "e2.png";
+	document.getElementById("resim").style.background = "url('e2.png') center/cover no-repeat";
 }
 function uc() {
-	document.getElementById("resim").src = "e3.png";
+	document.getElementById("resim").style.background = "url('e3.png') center/cover no-repeat";
 }
 function dort() {
-	document.getElementById("resim").src = "e4.png";
+	document.getElementById("resim").style.background = "url('e4.png') center/cover no-repeat";
 }
 function bes() {
-	document.getElementById("resim").src = "e5.png";
+	document.getElementById("resim").style.background = "url('e5.png') center/cover no-repeat";
 }
 var a;
 var b;
