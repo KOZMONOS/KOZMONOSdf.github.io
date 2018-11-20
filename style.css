@@ -104,26 +104,31 @@ body {
 @media only screen and (max-width:768px) {
 
 	.tasarýmarka {
-		height:1500px !important;
+		height: 1500px !important;
 	}
+
 	.tasarýmlar {
 		margin-top: -1350px;
 		flex-direction: column;
 	}
+
 	.yazý2 {
-	display:none !important;
+		display: none !important;
 	}
+
 	.yazý {
 		margin-left: 0%;
-		text-align:center !important;
+		text-align: center !important;
 	}
+
 	.tust {
-		
 		width: 100% !important;
 	}
+
 	.tr1, .tr2 {
 		width: 25%;
 	}
+
 	.tr3 {
 		width: 50%;
 	}
