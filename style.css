@@ -1,6 +1,8 @@
 body {
 	margin:0px;
 	z-index: -1;
+	background-color:black;
+	color:white;
 }
 .sb {
 	float: left;
@@ -73,7 +75,15 @@ body {
 	
 }
 .oyunlar {
-	height:200px;
- display:flex;
- justify-content:center;
+	margin-top:35px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.oyunlaryazi {
+	
+	margin-left: 155px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
