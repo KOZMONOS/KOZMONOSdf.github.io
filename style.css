@@ -75,15 +75,56 @@ body {
 	
 }
 .oyunlar {
-	margin-top:35px;
+	transform:skewY(-5deg);
+	margin-top:82px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 .oyunlaryazi {
-	
-	margin-left: 155px;
+
+	transform: skewY(-5deg);
+	width:100%;
+	font-size:20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+.tasarýmlar {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: -600px;
+}
+.yazý {
+	text-align: center;
+	margin-left: 50%;
+	user-select: none;
+}
+@media only screen and (max-width:700px) {
+
+	.tasarýmarka {
+		height:1500px !important;
+	}
+	.tasarýmlar {
+		margin-top: -1350px;
+		flex-direction: column;
+	}
+	.yazý2 {
+	display:none !important;
+	}
+	.yazý {
+		margin-left: 0%;
+		text-align:center !important;
+	}
+	.tust {
+		
+		width: 100% !important;
+	}
+	.tr1, .tr2 {
+		width: 25%;
+	}
+	.tr3 {
+		width: 50%;
+	}
 }
