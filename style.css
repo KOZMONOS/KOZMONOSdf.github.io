@@ -98,7 +98,7 @@ body {
 }
 .yazý {
 	text-align: center;
-	margin-left: 50%;
+
 	user-select: none;
 }
 @media only screen and (max-width:768px) {
@@ -117,7 +117,7 @@ body {
 	}
 
 	.yazý {
-		margin-left: 0%;
+		margin-left: 0% !important;
 		text-align: center !important;
 	}
 
