@@ -1,22 +1,53 @@
 <html>
 <head>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link   href="style.css" href="https://www.w3schools.com/w3css/4/w3.css" 
+		  rel="stylesheet" type="text/css" />
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
-	<div class="i" style="">
-		<!--oyun arkada dönen resimler-->
-		<div id="resim" />
-		<!--ust-->
-		<div class="ust" style="display:flex; flex-direction:row; justify-content:flex-start; margin:20px; position:fixed;  top: 0; ">
+
+
+	<!--oyun arkada dönen resimler-->
+	<div id="resim" />
+
+	<!--ust-->
+	<div id="telbar" style="position:fixed; 	width: 100%; z-index:200; visibility:hidden;">
+		<div id="beyaz" onclick="barkapat()">
+			<a style="font-size:50px; width:90%;">Ara</a>
+			<a id="x" style="width:10%; font-size:50px; margin-left:-40px;
+color:black; visibility : hidden;">X</a>
+		</div>
+		<div id="siyah" onclick="barac()">
+			<div id="u" style="visibility:hidden; display:flex; flex-direction:column; background-color:rgb(22,200,200);">
+				<a class="u" style=" width:100%; background-color:black; transform:skewX(-45deg); margin-left:-25px; height:50px;">s </a>
+				<a class="u" style="color:rebeccapurple; margin-top:-39px; z-index:99; font-size:40px;">Oyunlar</a>
+				<a class="u" style=" width:100%; background-color:black; transform:skewX(-135deg); margin-left:-25px; height:50px; margin-top:-7.5px;">s </a>
+				<a class="u" style="color:rebeccapurple; margin-top:-39px; z-index:99; font-size:40px;">Tasarýmlar</a>
+				<a class="u" style=" width:100%; background-color:black; transform:skewX(-45deg); margin-left:-25px; height:50px; margin-top:-7.5px;">s </a>
+				<a class="u" style="color:rebeccapurple; margin-top:-39px; z-index:99; font-size:40px;">Beatler</a>
+				<a class="u" style=" width:100%; background-color:black; transform:skewX(-135deg); margin-left:-25px; height:50px; margin-top:-7.5px;">s </a>
+				<a class="u" style="color:rebeccapurple; margin-top:-39px; z-index:99; font-size:40px;">PhotoShoplar</a>
+				<a class="u" style=" width:100%; background-color:black; transform:skewX(-45deg); margin-left:-25px; height:50px; margin-top:-7.5px;">s </a>
+				<a class="u" style="color:rebeccapurple; margin-top:-39px; z-index:99; font-size:40px;">Ýkonlar Ve Logolar</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="ustkisim" style="position:fixed; width:100%; z-index:300;">
+		<div id="asd" class="ust" style="width:100%; display:flex; flex-direction:row; justify-content:flex-start; margin:20px;   top: 0; z-index:100; ">
+
+
+
 			<!--ust KOZMONOS yazý-->
-			<div style="width:300px; background-color:dimgray; padding:10px;">
+			<div style="width:20%; background-color:rgb(10,10,0); padding:10px;">
 				<a style="  font-size:25px;  ">KOZMONOS</a>
 			</div>
 
 			<!--ust Oyunlar  yazýarka-->
-			<div style="transform:skewX(-45deg); background-color:red; padding:10px;  width:110px; margin-left:-7%;">
+			<div style="transform:skewX(-45deg); background-color:rgb(50,50,50); padding:10px;  width:10%; margin-left:-7%;">
 				<a style="visibility:hidden;  font-size:20px;">Oyunlar</a>
 			</div>
 			<!--ust Oyunlar  yazý-->
@@ -24,76 +55,109 @@
 
 
 			<!--ust Tasarýmlar  yazýarka-->
-			<div style="transform:skewX(-45deg); background-color:blueviolet; padding:10px;  width:120px;">
+			<div style="transform:skewX(-45deg); background-color:rgb(50,50,100); padding:10px;  width:10%;">
 				<a style="visibility:hidden;  font-size:20px; ">Tasarýmlar</a>
 			</div>
 			<!--ust Tasarýmlar  yazý-->
 			<a style="z-index:99; margin-left:-135px;  font-size:25px; padding:10px;">Tasarýmlar</a>
 
 			<!--ust Beatler  yazýarka-->
-			<div style="transform:skewX(-45deg); background-color:red; padding:10px;  width:80px;">
+			<div style="transform:skewX(-45deg); background-color:rgb(50,50,150); padding:10px;  width:7%;">
 				<a style="visibility:hidden;  font-size:20px; ">Beatler</a>
 			</div>
 			<!--ust Beatler  yazý-->
 			<a style="z-index:99; margin-left:-95px;  font-size:25px; padding:10px;">Beatler</a>
 
 			<!--ust PhotoShoplar  yazýarka-->
-			<div style="transform:skewX(-45deg); background-color:blueviolet; padding:10px;  width:140px;">
+			<div style="transform:skewX(-45deg); background-color:rgb(50,50,200); padding:10px;  width:10%;">
 				<a style="visibility:hidden;  font-size:20px; ">PhotoShoplar</a>
 			</div>
 			<!--ust PhotoShoplar  yazý-->
 			<a style="z-index:99; margin-left:-155px;  font-size:25px; padding:10px;">PhotoShoplar</a>
 
 			<!--ust Ýkonlar ve Logolar  yazýarka-->
-			<div style="transform:skewX(-45deg); background-color:red; padding:10px;  width:200px; margin-left:-0.1%;">
-				<a style="visibility:hidden;  font-size:20px; "> Ýkonlar ve Logolar</a>
+			<div style="transform:skewX(-45deg); background-color:rgb(50,50,250); padding:10px;  width:15%; margin-left:-0.2%;">
+				<a style="visibility:hidden;  font-size:20px;   "> Ýkonlar ve Logolar</a>
 			</div>
+
 			<!--ust PhotoShoplar  yazý-->
 			<a style="z-index:99; margin-left:-215px;  font-size:25px; padding:10px;"> Ýkonlar ve Logolar</a>
+			<div style="visibility:hidden; transform:skewX(-45deg); background-color:rgb(50,50,250); padding:10px;  width:10%; margin-left:-0.1%;">
+				<a style="visibility:hidden;  font-size:20px; ">ff</a>
+			</div>
+			<!--ust-->
+			<div class="ustt" style="   ">
+				<!--ust sag -->
 
-				<!--ust-->
-		<div class="ustt" style="background-color:aqua; display:flex; justify-content:flex-end; margin-left:220px; ">
-			<!--ust KOZMONOS yazý-->
-		<a style="float:right;" >asdas</a>
+				<div style="margin-right:-60px;   width:200px;display:flex; justify-content:flex-end;height:50px;">
+					<a style="background-color:black; color:rebeccapurple; padding:10px;width:40px; text-align:center; font-weight:bold; transform:skewX(-45deg);  margin-right:-30px;"></a>
+					<a style="background-color:black; color:rebeccapurple; padding:10px;width:40px; text-align:center; font-weight:bold; "></a>
+					<a style="background-color:black; color:rgb(150,150,50); padding:10px;width:40px; text-align:center; font-weight:bold;  font-size:30px; ">Ara</a>
+					<a style="background-color:black; color:rebeccapurple; padding:10px;width:40px; text-align:center; font-weight:bold; font-size:30px; ">v</a>
+				</div>
 			</div>
 		</div>
-		<div class="sd">
-			<button class="sb" id="sb" onclick="butoneksi()">v</button>
-			<button class="sb2" onclick="butonart()">v</button>
-		</div>
-		<div class="toplar">
-			<button class="sbt1" onclick="bir()">v</button>
-			<button class="sbt1" onclick="iki()">v</button>
-			<button class="sbt1" onclick="uc()">v</button>
-			<button class="sbt1" onclick="dort()">v</button>
-			<button class="sbt1" onclick="bes()">v</button>
+
+	</div>
+	<div class="sd">
+		<button class="sb" id="sb" onclick="butoneksi()">v</button>
+		<button class="sb2" onclick="butonart()">v</button>
+	</div>
+	<div class="toplar">
+		<button class="sbt1" onclick="bir()">v</button>
+		<button class="sbt1" onclick="iki()">v</button>
+		<button class="sbt1" onclick="uc()">v</button>
+		<button class="sbt1" onclick="dort()">v</button>
+		<button class="sbt1" onclick="bes()">v</button>
+	</div>
+	</div>
+
+	<div class="oyunlaryazii" style="font-size:48px;  width:100%; display:flex;  justify-content:flex-start; float:right;">
+		<a>Oyunlar</a>
+	</div>
+	<div id="oyunlarbolum" style="">
+		<div id="oyun" style="">
+			<div class="oyunlar">
+				<img class="or1" src="o1.jpg" style=" width:25%; height:27%; float:left;" />
+				<img class="or1" src="o1.jpg" style="width:25%; height:27%; " />
+				<img class="or1" src="o1.jpg" style="width:25%; height:27%;" />
+				<img class="or1" src="o1.jpg" style="width:25%; height:27%; " />
+			</div>
+			<div class="oyunlaryazi">
+				<a class="oy1" style=" width:25%;    ">KAR  TOPU</a>
+				<a class="oy1" style=" width:25%; ">KOZMONOS</a>
+				<a class="oy1" style=" width:25%">KOZMONOS</a>
+				<a class="oy1" style=" width:25%; ">KOZMONOS</a>
+			</div>
+			<div class="oyunlaryazdii" style="font-size:28px;  width:100%; display:flex;  justify-content:flex-end; float:right;">
+				<a id="dahafazla" onclick="oyunlardahafazlasi()" style="color:rgb(150,150,50); user-select:none; ">Daha Fazlasý...</a>
+			</div>
+			<div id="oyun2" style=" display:none; transition:all linear 0.5s;">
+				<div class="oyunlar">
+					<img class="or1" src="o1.jpg" style=" width:25%; height:27%; float:left;" />
+					<img class="or1" src="o1.jpg" style="width:25%; height:27%; " />
+					<img class="or1" src="o1.jpg" style="width:25%; height:27%;" />
+					<img class="or1" src="o1.jpg" style="width:25%; height:27%; " />
+				</div>
+				<div class="oyunlaryazi">
+					<a class="oy1" style=" width:25%;    ">KAR  TOPU2</a>
+					<a class="oy1" style=" width:25%; ">KOZMONOS2</a>
+					<a class="oy1" style=" width:25%">KOZMONOS2</a>
+					<a class="oy1" style=" width:25%; ">KOZMONOS2</a>
+				</div>
+			</div>
+
 		</div>
 	</div>
-	<div style="height:100vh;">
-		<div class="oyunlar">
-			<img src="o1.jpg" style=" width:25%; height:27%; float:left;" />
-			<img src="o1.jpg" style="width:25%; height:27%; " />
-			<img src="o1.jpg" style="width:25%; height:27%;" />
-			<img src="o1.jpg" style="width:25%; height:27%; " />
-		</div>
-		<div class="oyunlaryazi">
-			<a style=" width:25%;   ">KAR  TOPU</a>
-			<a style=" width:25%; ">KOZMONOS</a>
-			<a style=" width:25%">KOZMONOS</a>
-			<a style=" width:25%; ">KOZMONOS</a>
-		</div>
-		<div class="oyunlaryazi" style="font-size:48px;  width:100%; display:flex;  justify-content:flex-end; float:right;">
-			<a >Oyunlar</a>
-			</div>
-		</div>
-	<div style="height:100vh;">
+	<div style="">
 		<div style="display:flex; justify-content:center; clear:both; font-size:48px; ">
 			<div class="tasarýmarka" style="background:url(tasarimarka.png) center/cover ; width:100%; height:100%; display:flex;
 justify-content:center;  margin-top:300px;">
-				<a style="user-select:none;  ">TASARIMLAR</a>
+				<a style="user-select:none; margin-top:100px; ">TASARIMLAR</a>
 			</div>
 
 		</div>
+
 		<div class="tasarýmlar">
 
 
@@ -123,9 +187,90 @@ justify-content:center;  margin-top:300px;">
 
 
 		</div>
-	</div>
+		<div class="oyunlaryazdii" style="font-size:28px;  display:flex;  justify-content:flex-end; float:right;">
+			<a id="dahafazlatasarým" onclick="tasarýmlardahafazlasi()" style="color:rgb(150,150,50); user-select:none; ">Daha Fazlasý...</a>
+		</div>
+		<div id="tasarýmlar2" style="display:none;">
 
-		<script src="cava.js"></script>
+
+			<div class="tust" style="display:flex;  flex-direction:column; justify-content:flex-end; font-size:80px; width:33%; ">
+
+
+				<a class="yazý2" style="text-align:center;  user-select:none;">.</a>
+				<img class="tr1" src="d.png" style="width:50%;  height:auto; align-self:center;" />
+
+			</div>
+
+			<div class="tust" style="display:flex;  flex-direction:column;  justify-content:center; font-size:80px; width:33%;  ">
+
+
+				<a class="yazý2" style="text-align:center;  user-select:none;">.</a>
+				<img class="tr2" src="g.png" style="width:35%; height:auto; align-self:center;" />
+
+			</div>
+
+			<div class="tust" style="display:flex;  flex-direction:column; justify-content:flex-end;  font-size:80px; width:33%; ">
+
+
+				<a class="yazý2" style="text-align:center;  user-select:none;">.</a>
+				<img class="tr3" src="ev.png" style="width:75%; height:auto; align-self:center;" />
+
+			</div>
+
+
+		</div>
+
+	</div>
+	<div id="muzik" style="">
+		<div style="background-color:darkslategrey; width:100%; height:90vh; margin-top:50px; display:flex; flex-direction:column;">
+			<div style="display:flex;">
+				<img src="nota.png" style="height:150px; width:auto; visibility:hidden;" />
+			</div>
+			<div style="display:flex;">
+				<img src="notap.png" style="height:150px; width:auto;" />
+				<img src="notap.png" style="height:150px; width:auto;" />
+				<img src="notap.png" style="height:150px; width:auto;" />
+				<img src="notap.png" style="height:150px; width:auto;" />
+				<img src="notap.png" style="height:150px; width:auto;" />
+			</div>
+			<div style="display:flex;">
+				<a style="height:150px; width:auto; max-width:100px;">Bilkgiasdasdasadsadsadsdsad</a>
+				<img src="notap.png" style="height:150px; width:auto;" />
+				<img src="notap.png" style="height:150px; width:auto;" />
+				<img src="notap.png" style="height:150px; width:auto;" />
+				<img src="notap.png" style="height:150px; width:auto;" />
+			</div>
+		</div>
+
+	</div>
+		
+		<div style="background-color:black; width:100%; height:10vh; display:flex;">
+
+			<div style=" background-color:rebeccapurple; width:5%; height:70px; ">
+
+				<img src="o1.jpg" style=" height:100%; width:100%;" />
+
+			</div>
+
+			<div style="background-color:black; width:15%; height:70px;  ">
+				<a style="font-size:20px;  position:relative; top:25px; margin-left:10px;">kalan/olan</a>
+			</div>
+			<div style="background-color:black; width:60%; height:70px; text-align:center; ">
+			
+				<a style="font-size:20px; margin-left:10px;">Beat Adý </a>
+				<a style="font-size:20px; position:relative; top:45px; left:-80px;">Beat Bilgi</a>
+			</div>
+			<div style="background-color:black; width:15%; height:70px; ">
+				<a style="font-size:20px; "></a>
+			</div>
+			<div style=" background-color:dodgerblue; width:5%; height:100%;">
+				<img src="play.png" style=" height:100%; width:100%;" />
+			</div>
+
+		</div>
+
+		</div>
+	<script src="cava.js"></script>
 
 </body>
 </html>

@@ -39,7 +39,6 @@ body {
 	overflow: hidden;
 	height: 100vh;
 	min-height: 350px;
-	margin-top: 13px;
 }
 .sbt1 {
 	background-color: black;
@@ -74,8 +73,12 @@ body {
 	justify-content: center;
 	
 }
+#oyunlarbolum {
+	transform: skewY(-5deg);
+	transition: all linear 0.5s;
+}
 .oyunlar {
-	transform:skewY(-5deg);
+	
 	margin-top:82px;
 	display: flex;
 	flex-direction: row;
@@ -83,7 +86,7 @@ body {
 }
 .oyunlaryazi {
 
-	transform: skewY(-5deg);
+	
 	width:100%;
 	font-size:20px;
 	display: flex;
@@ -95,20 +98,47 @@ body {
 	flex-direction: row;
 	justify-content: flex-end;
 	margin-top: -600px;
+
+}
+#tasarýmlar2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 10px;
 }
 .yazý {
 	text-align: center;
 
 	user-select: none;
 }
+#beyaz {
+	transform: rotate(-5deg);
+	display: flex;
+	background-color: white;
+	width: 100%;
+	height: 50px;
+	z-index: 201 !important;
+	transition: all linear 0.7s;
+}
+#siyah {
+	background-color: black;
+	width: 110%;
+	height: 250px;
+	border: solid;
+	border-color: black;
+	z-index: -1 !important;
+	margin-top: -260px;
+	margin-left: -50px;
+	transform: rotate(-5deg);
+	transition: all linear 0.5s;
+}
 @media only screen and (max-width:768px) {
-
 	.tasarýmarka {
 		height: 1500px !important;
 	}
 
 	.tasarýmlar {
-		margin-top: -1350px;
+		margin-top: -1290px;
 		flex-direction: column;
 	}
 
@@ -128,8 +158,26 @@ body {
 	.tr1, .tr2 {
 		width: 25%;
 	}
-
+	.or1,.oy1 {
+	width:100% !important;
+	margin-top:40px !important;
+	}
+	.oy1 {
+	margin-top:210px !important;
+	}
 	.tr3 {
 		width: 50%;
+	}
+	.oyunlar,.oyunlaryazi {
+	flex-direction:column !important ;
+	}
+	.oyunlaryazi {
+		margin-top: -907px !important;
+	}
+	.ustkisim {
+	display:none;
+	}
+	#telbar {
+	visibility:visible !important;
 	}
 }
